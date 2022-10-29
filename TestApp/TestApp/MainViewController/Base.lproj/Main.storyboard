@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="riI-xk-g9u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--kolesa.kz-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="kolesa.kz" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-XS-dCJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V3x-aU-aWk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YhR-C2-4L7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lQJ-XS-dCJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1vi-pP-7ts"/>
+                            <constraint firstItem="lQJ-XS-dCJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ADO-b9-Epf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lQJ-XS-dCJ" secondAttribute="bottom" id="Nv7-lr-iOR"/>
+                            <constraint firstItem="lQJ-XS-dCJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vAa-Qp-FnS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OqO-cL-06W">
+                        <barButtonItem key="leftBarButtonItem" title="КОЛЁСА" style="plain" id="4zL-xv-icL">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Новости" id="aNe-3a-5WS"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="lQJ-XS-dCJ" id="Uy5-mB-XFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--kolesa.kz-->
+        <scene sceneID="Xc8-wF-XSm">
+            <objects>
+                <tabBarController title="kolesa.kz" id="riI-xk-g9u" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="house" catalog="system" id="RV4-bU-BSd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mdM-mi-tou" kind="relationship" relationship="viewControllers" id="0m2-kM-2KM"/>
+                        <segue destination="4dv-9z-4JD" kind="relationship" relationship="viewControllers" id="bHU-Sf-kGF"/>
+                        <segue destination="Xes-Yp-hXa" kind="relationship" relationship="viewControllers" id="Ec0-hp-dB1"/>
+                        <segue destination="bq7-Dn-2Me" kind="relationship" relationship="viewControllers" id="Noy-aD-FX5"/>
+                        <segue destination="qMF-x2-U6q" kind="relationship" relationship="viewControllers" id="LAp-ZV-gGE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zh-wE-bhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1441" y="1067"/>
+        </scene>
+        <!--kolesa.kz-->
+        <scene sceneID="VR5-1t-mfl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mdM-mi-tou" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="kolesa.kz" image="house.fill" catalog="system" id="oH4-jr-jWG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jMY-yv-mQB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="avb-HU-xWy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8c-aY-uFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--FavouriteViewController-->
+        <scene sceneID="Ukr-gw-f56">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="FavouriteViewController" storyboardName="FavouriteViewController" referencedIdentifier="FavouriteViewController" id="4dv-9z-4JD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fFa-oC-3BE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwZ-jw-vls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="1011"/>
+        </scene>
+        <!--ApplyNewAdViewController-->
+        <scene sceneID="qRs-5A-nIv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ApplyNewAdViewController" storyboardName="ApplyNewAdViewController" referencedIdentifier="ApplyNewAdViewController" id="Xes-Yp-hXa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cUT-qP-bRp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5J5-x4-Hen" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706" y="1067"/>
+        </scene>
+        <!--MessageViewController-->
+        <scene sceneID="Ugz-Yj-9KE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MessageViewController" storyboardName="MessageViewController" referencedIdentifier="MessageViewController" id="bq7-Dn-2Me" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="a1P-oD-zUe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9u-9K-kLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723" y="1122"/>
+        </scene>
+        <!--ParlorViewController-->
+        <scene sceneID="W36-rT-xzZ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ParlorViewController" storyboardName="ParlorViewController" referencedIdentifier="ParlorViewController" id="qMF-x2-U6q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LJk-Rd-sT1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drl-tH-zVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736" y="1175"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
